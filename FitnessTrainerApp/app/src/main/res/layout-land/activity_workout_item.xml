@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68777777">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewWorkoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workout Name:" />
+
+            <EditText
+                android:id="@+id/editTextWorkoutName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="1 Mile Run, Bench Press"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewWorkoutLocationOrSets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location_or_sets" />
+
+            <EditText
+                android:id="@+id/editTextLocationOrSet"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Indoors, Outdoor"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewIntensityOrWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intensity" />
+
+            <EditText
+                android:id="@+id/editTextIntensityOrWeight"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Run 1 mile in less than 15 minutes."
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/workoutDetailsSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSaveWorkoutItem"
+                android:text="Save" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

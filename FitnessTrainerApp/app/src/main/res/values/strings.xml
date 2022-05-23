@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FitnessTrainerApp</string>
+    <string name="refresh_workouts">Refresh Session Details</string>
+    <string name="delete_session">Delete Session</string>
+    <string name="location_or_sets">Location:</string>
+    <string name="delete_workout">Delete Workout</string>
+    <string name="refresh_workout_items">Refresh Workout Items</string>
+    <string name="string_refresh_workout_items" />
+    <string name="cardio">Cardio</string>
+    <string name="strength">Strength</string>
+    <string name="create_session_alert">Create Session Alert</string>
+    <!--    <string name="refresh_workout_items">Refresh Workout Items</string>-->
+</resources>
